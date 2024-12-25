@@ -10,22 +10,22 @@
     <link href="styles.css" rel="stylesheet">
     <script src="function.js"></script>
 </head>
-<body>
+<body onload="init()">
     <header>
         <div class="topnav">
 
 
             <div id="blocklink1" onclick="">
-                <a>my Imdb</a>
+                <a class="linkk" href="index.html">my-IMDb</a>
             </div>
             <a id="blocklinks" onclick="">
-                Series 
+                series 
             </a>
             <a id="blocklinks" onclick="">
-                Movies 
+                movies 
             </a>
             <a id="blocklinks" onclick="">
-                
+                contact
             </a>
 
             <input placeholder="Search...">
@@ -36,26 +36,34 @@
     <div id="picbox">
         <img id="bestof" src="Images/promobildControlZ.png"  alt="">
     </div>
+
+    <div id="informations">
+        <a >
+            Control Z
+        </a>
+
+        <div id="moreinformations">
+           <a class="linkk" href="seriesIndex.html?Series=ControlZ" >more Informations </a>
+        </div>
+    </div>
     
     
     <div id="headline">
-        <a>Best Series (Ranking)</a>
+        <a>Best Series</a>
         
     </div>
     
     <div class="scrollmenu">
-        <img id="pic" src="Images/lacasadepapel.jpg" alt="h" >
-        <img id="pic" src="Images/andor.jpg" alt="h" >
-        <img id="pic" src="Images/lupin.jpg" alt="h" >
-        <img id="pic" src="Images/prisonbreak.jpg" alt="h" >
-        <img id="pic" src="Images/controlZ.jpeg" alt="h" >
-        <img id="pic" src="Images/" alt="h" >
-        <img id="pic" src="Images/" alt="h" >
-        <img id="pic" src="Images/" alt="h" >
-        <img id="pic" src="Images/" alt="h" >
-        <img id="pic" src="Images/" alt="h" >
-        <img id="pic" src="Images/" alt="h" >
-        <img id="pic" src="Images/" alt="h" >
+        <img onclick="handleClick(this)" class="pic" src="Images/lacasadepapel.jpg" alt="h" >
+        <img onclick="handleClick(this)" class="pic" src="Images/andor.jpg" alt="h" >
+        <img onclick="handleClick(this)" class="pic" src="Images/lupin.jpg" alt="h" >
+        <img onclick="handleClick(this)" class="pic" src="Images/prisonbreak.jpg" alt="h" >
+        <img onclick="handleClick(this)" class="pic" src="Images/controlZ.jpeg" alt="h" >
+        <img onclick="handleClick(this)" class="pic" src="Images/Mandalorian.jpg" alt="h" >
+        <img onclick="handleClick(this)" class="pic" src="Images/MisterRobot.jpg" alt="h" >
+        <img onclick="handleClick(this)" class="pic" src="Images/RingederMacht.jpg" alt="h" >
+        <img onclick="handleClick(this)" class="pic" src="Images/heartstopper.jpg" alt="h" >
+    
     </div>
     
     <div id="headline">
@@ -64,19 +72,16 @@
     </div>
 
     <div class="scrollmenu">
-        <img id="pic" src="Images/tLotR.jpg" alt="h" >
-        <img id="pic" src="Images/Interstelar.png" alt="h" >
-        <img id="pic" src="Images/" alt="h" >
-        <img id="pic" src="Images/" alt="h" >
-        <img id="pic" src="Images/" alt="h" >
-        <img id="pic" src="Images/" alt="h" >
-        <img id="pic" src="Images/" alt="h" >
-        <img id="pic" src="Images/" alt="h" >
-        <img id="pic" src="Images/" alt="h" >
-        <img id="pic" src="Images/" alt="h" >
+        <img onclick="handleClick(this)" class="pic" src="Images/Dune.jpg" alt="h" >
+        <img onclick="handleClick(this)" class="pic" src="Images/tLotR.jpg" alt="h" >
+        <img onclick="handleClick(this)" class="pic" src="Images/Interstelar.png" alt="h" >
+        <img onclick="handleClick(this)" class="pic" src="Images/HarryPotter.jpg" alt="h" >
+        <img onclick="handleClick(this)" class="pic" src="Images/rougeOne.jpg" alt="h" >
+        
     </div>
 
     <footer>
+        <a  href="seriesIndex.html?Series=Mandalorian">Mandalorian</a>
 
     </footer>
 </body>
