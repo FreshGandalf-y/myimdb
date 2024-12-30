@@ -107,6 +107,7 @@ function handleClick(e) {
     window.location.assign(url);
 }
 
+// URL des Filmes /der Serie ermitteln und bestimmen
 function initSeriesIndex() {
    
     console.log(Series);
@@ -117,10 +118,19 @@ function initSeriesIndex() {
     console.log(series)
 }
 
+// Name des Filmes
 function picSource() {
     var source = new URLSearchParams(window.location.search);
     const series = source.get("Series");
     console.log(series);
 
-    var Name = document.getElementById('filmname').innerHTML = series; 
+    var Name = document.getElementById(filmname).innerHTML = series; 
+}
+
+function textdescription() {
+    var source = new URLSearchParams(window.location.search);
+    const text = source.get("Series")
+    console.log("jetzt kommt der Text Teil?")
+    console.log(text);
+
 }

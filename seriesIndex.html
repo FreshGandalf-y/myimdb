@@ -7,7 +7,7 @@
     <script src="function.js"></script>
     <link href="styles.css" rel="stylesheet">
 </head>
-<body onload="initSeriesIndex()">
+<body onload="initSeriesIndex(), textdescription(), picSource()">
     <header>
         <div class="topnav">
 
@@ -30,15 +30,21 @@
         </div>
     </header>
 
+    <img class="wallpaper" src="Images/mandalorianTatooinWallpaper.jpeg" alt="mandalorianTatooinWallpaper">
+
     <img id="frontimage" class="frontimage" src="Images/Mandalorian.jpg" alt="">
 
-    <div onload="picSource()" >
+    <div class="seriesMovieHeadline"  >
         <a>
-           Hallo <span class="" id="filmname"></span>
+           Mandalorian <span class="" id="filmname"></span>
         </a>
     </div>
 
+    <div  class="" id="">
+        <a id="textdescription"> Mandalorian is a Starwars Series from 2019 to 2023.</a>
+    </div>
 
+    <a>Hallo Welt</a>
 
 </body>
 </html>

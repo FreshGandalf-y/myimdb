@@ -4,7 +4,7 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #cccccc;
     margin: 0px;
-
+    transition: 250ms ease-in-out;
 }
 
 header {
@@ -26,11 +26,8 @@ header {
 
 #blocklinks:hover {
     color: #527a7a;
-    margin: 20px;
-    font-size: 20px;
-    font-family: system-ui;
-    
-    cursor: pointer;
+    transform: scale(1.1);
+    transition: 250ms ease-in-out;
 }
 
 #blocklink1 {
@@ -72,15 +69,16 @@ input {
 
 /* index.html */
 
-#informations {
+.informations {
     position: absolute;
     top: 200px;
     left: 30px;
     color: #fff;
     font-size: 50px;
+    transition: 250ms ease-in-out;
 }
 
-#moreinformations {
+.moreinformations {
     color: #000;
     background-color: #527a7a;
     border-radius: 5px;
@@ -90,6 +88,12 @@ input {
     padding: 6px;
     text-align: center;
     cursor: pointer;
+    transition: 250ms ease-in-out;
+}
+
+.moreinformations:hover {
+    transform: scale(1.1);
+    transition: 250ms ease-in-out;
 }
 
 #icon {
@@ -113,13 +117,13 @@ input {
 
 
 
-div.scrollmenu {
+.scrollmenu {
     overflow: auto;
     width: 100%;
     white-space: nowrap;
     display: inline-block;
     height: 270px;
-   
+    transition: 250ms ease-in-out;
 }
 
 .pic {
@@ -139,18 +143,23 @@ div.scrollmenu {
     border-radius: 15px;
     margin: 20px;
     cursor: pointer;
+    transform: scale(1.1);
+    transition: 250ms ease-in-out;
 }
 
 #headline {
     background-color: #527a7a;
-    text-align: left;
     height: 40px;
     width: 95%;
     border-radius: 10px;
     margin: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: system-ui;
     padding-left: 10px;
     padding-top: 10px;
+    justify-content: left;
+    display: inline-block;
+    align-items: center;
+    color: #fff;
 
 }
 
@@ -176,4 +185,22 @@ div.scrollmenu {
 
 .objectHeadline {
     color: yellowgreen;
+}
+
+.wallpaper {
+    width: 100%;
+    height: 350px;
+}
+
+.seriesMovieHeadline {
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    margin: 20px;
+    font-size: 100px;
+    font-weight: 400;
+    color: #fff;
+    font: optional;
+    text-shadow: 10px 15px 15px gray;
+
 }
